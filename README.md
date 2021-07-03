@@ -1,6 +1,6 @@
 # Project_FIFA_MoneyBall
 
-<!-- ![Project Banner: FIFA](https://education-team-2020.s3-eu-west-1.amazonaws.com/data-analytics/project+banners/fifa-project.jpg) -->
+![photo](https://github.com/Ironhack-Data-0621-Remote/Project_FIFA_MoneyBall/blob/main/Images/photo.jpg)
 
 ## The challenge
 
@@ -108,6 +108,7 @@ This data set includes:
 ## Tips & Tricks
 
 - Organize yourself (don't get lost!). Respect deadlines.
+  
 - Ask for help but don't forget that Google is your friend.
 - Define a simple approach first. You never know how the data can betray you. :wink:
 - Document your work.
