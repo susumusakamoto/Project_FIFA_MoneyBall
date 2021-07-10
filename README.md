@@ -53,11 +53,11 @@ For this project, I used Python including following libraries.
 ## Workflow
 I followed the following steps to analyze the data and create linear regression model.
 
-1. Importing the data
+### 1. Importing the data
 - 1-1. Importing the data
 - 1-2. Getting overview of the data
 
-2. Cleaning (columns names, objects to strings, null)
+### 2. Cleaning (columns names, objects to strings, null)
 - 2-1. Changing the column names and setting 'ID' column as index
 - 2-2. Changing 'height' unit from feet/inches to centimeter
 - 2-3. Changing 'weight' unit from pounds to kilograms
@@ -70,33 +70,33 @@ I followed the following steps to analyze the data and create linear regression 
 - 2-10. Handling null values
 - 2-11. Determine whether the player is active or retired
 
-3. EDA
+### 3. EDA
 - 3-1. Checking distributions
 
-4. Personal Analysis
+### 4. Personal Analysis
 - 4-1. Which countries are the origins of high valued players?
 - 4-2. Which clubs have more high valued players?
 - 4-3. When is the football players' career-peak in terms of their values?
 
-5. Creating Linear Regression Models
-- 5-1. Transformation
+### 5. Creating Linear Regression Models
+#### 5-1. Transformation
 - 5-1-0 Without transformation
 - 5-1-1. Box-cox transfomation to 'value'
 
-- 5-2. Removing some players
+#### 5-2. Removing some players
 - 5-2-1. all active players
 - 5-2-2. top club active players¶
 - 5-2-3. top club active outfield player
 
-- 5-3. Change dependent variables
+#### 5-3. Change dependent variables
 - 5-3-1. 'ova' and 'age'
 - 5-3-2. 'ova', 'age' and 'sm'
 - 5-3-3. add fifa best 11
 - 5-3-4. remove outlier from 'value'
 
-6. Analysing Linear Regression Models
+### 6. Analysing Linear Regression Models
 
-7. Conlusion
+### 7. Conlusion
 
 ## Results of linear regression model
 As taking the following steps, the R-squared of the model reached to 0.9735.
