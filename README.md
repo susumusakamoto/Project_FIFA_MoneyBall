@@ -1,6 +1,6 @@
 # Project_FIFA_MoneyBall
 
-![image]](Images/fifa.jpeg)
+![image1]](Images/fifa.jpeg)
 
 ## The objective and the motive
 
@@ -119,22 +119,22 @@ I followed the following steps to analyze the data and create linear regression 
 | Netherlands	| 3411.867008	
 
 #### Clubs and market values
-|club | average value
+| club | average value
 |	--- |		
-|FC Bayern München	|27668.181818
-|Real Madrid	|24693.548387	
-|Liverpool	|21848.974359	
-|Paris Saint-Germain	|21042.500000	
-|Manchester City	|20263.513514	
-|FC Barcelona	|18757.894737	
-|Juventus	|16529.054054
-|Atlético Madrid	|15999.305556	
-|Manchester United	|14935.000000	
-|Borussia Dortmund	|14665.714286
+| FC Bayern München	| 27668.181818
+| Real Madrid	| 24693.548387	
+| Liverpool	| 21848.974359	
+| Paris Saint-Germain	| 21042.500000	
+| Manchester City	| 20263.513514	
+| FC Barcelona	| 18757.894737	
+| Juventus	| 16529.054054
+| Atlético Madrid	| 15999.305556	
+| Manchester United	| 14935.000000	
+| Borussia Dortmund	| 14665.714286
 
 
 #### Age and market values
-![image]](Images/age_values.jpg)
+![image2]](Images/age_values.jpg)
 
 ### Linear Regression Model
 As taking the following steps, the R-squared of the model reached to 0.9735.
@@ -153,7 +153,7 @@ The number of rows decreased to 7048. (In the beginning it was 17125)
 - set dependent variable as 'ova', 'age' and 'sm'
 - but not necessary to have 'sm' because it doesn't make a big difference.
 
-![image]](Images/regplot_1.jpg)
+![image3]](Images/regplot_1.jpg)
 
 | top_league | no trans | box-cox'value' | only active | no gk | 'ova','age' | 'ova','age','sm' | best11 | remove outliers
 | ---        | ---      | ---            |   ---       |  ---  |  ---        | ---              | ---    | --- 
