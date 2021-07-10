@@ -2,7 +2,9 @@
 
 ## The objective and the motive
 
-The object of this analysis is to get general ideas about the football players a
+Football is one of the largest market in sports.
+In this analysis, I will try to draw the overview of the values of players by sorting countries, leagues, and their age. 
+I will also make the linear regression model to predict the values of players.
 
 ### Three Analysis
 
@@ -21,6 +23,21 @@ I used dataset which is provided in the Data folder [**fifa21_male2.csv**](https
 
 I personally used two csv files apart from the main dataset.
 
+### League_rate2.csv
+One is 'league_rate2.csv'
+I created it extracting data from two website.
+
+To get information which clubs belongs to which leagues 
+https://www.ea.com/games/fifa/fifa-21/news/fifa-21-all-leagues-clubs-teams
+
+To get the ranking and values of each leagues including lower divisions
+https://www.globalfootballrankings.com/
+
+### best11.csv
+The other data file is 'best11.csv' which contains best 55 players selected by FIFA for 2020.
+Data was extracted from the following website.
+
+https://fifpro.org/en/industry/world-11/2020-world-11-the-list-of-55-male-players
 
 ## Used tools 
 For this project, I used Python including following libraries.
@@ -34,6 +51,8 @@ For this project, I used Python including following libraries.
 - sklearn
 
 ## Workflow
+I followed the following steps to analyze the data and create linear regression model.
+
 1. Importing the data
 - 1-1. Importing the data
 - 1-2. Getting overview of the data
@@ -77,8 +96,8 @@ For this project, I used Python including following libraries.
 
 6. Analysing Linear Regression Models
 
-## Results and conlusions
-For my final model, I did the following steps.
+## Results
+As taking the following steps, the R-squared of the model reached to 0.973
 - Filter out retired players
 - Filter out goalkeepers
 - Filter out players who belongs to lower division
@@ -86,4 +105,7 @@ For my final model, I did the following steps.
 
 - set dependent variable as 'ova', 'age' and 'sm'
 
-The R-squared I reached in the end is 0.973.
+**Things to consider**
+I am little skeptical about my model, because the r-squared value is too high...
+Also, this model is totally depended on 'overall ability' which I do not how this value was 
+
