@@ -96,6 +96,8 @@ I followed the following steps to analyze the data and create linear regression 
 
 6. Analysing Linear Regression Models
 
+7. Conlusion
+
 ## Results of linear regression model
 As taking the following steps, the R-squared of the model reached to 0.9735.
 
