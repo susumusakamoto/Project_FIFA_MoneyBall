@@ -120,7 +120,7 @@ I followed the following steps to analyze the data and create linear regression 
 
 #### Clubs and market values
 | club | average value
-|	--- |		
+|	--- |	---	
 | FC Bayern München	| 27668.181818
 | Real Madrid	| 24693.548387	
 | Liverpool	| 21848.974359	
