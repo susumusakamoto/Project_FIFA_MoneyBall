@@ -1,5 +1,7 @@
 # Project_FIFA_MoneyBall
 
+![image]](Images/fifa.jpeg)
+
 ## The objective and the motive
 
 Football is one of the largest market in sports.
@@ -94,27 +96,81 @@ I followed the following steps to analyze the data and create linear regression 
 - 5-3-3. add fifa best 11
 - 5-3-4. remove outlier from 'value'
 
-### 6. Analysing Linear Regression Models
+#### 5-4. Overall results of the models
 
-### 7. Conlusion
+## 6. Analysing Linear Regression Models
 
-## Results of linear regression model
+## 7. Conclusion
+
+### Persoal Analysis
+#### Countries and market values
+
+| nationality	| average value
+| --- | ---	
+| Brazil	| 6783.866822	
+| Spain	| 6482.513465	
+| Germany | 	5721.974026	
+| Portugal	| 5662.529880
+| France | 	5556.868231	
+| Italy | 	4615.315615	
+| Belgium	| 4603.184080	
+| Argentina	| 4514.445983	
+| England	| 3455.195418	
+| Netherlands	| 3411.867008	
+
+#### Clubs and market values
+|club | average value
+|	--- |		
+|FC Bayern München	|27668.181818
+|Real Madrid	|24693.548387	
+|Liverpool	|21848.974359	
+|Paris Saint-Germain	|21042.500000	
+|Manchester City	|20263.513514	
+|FC Barcelona	|18757.894737	
+|Juventus	|16529.054054
+|Atlético Madrid	|15999.305556	
+|Manchester United	|14935.000000	
+|Borussia Dortmund	|14665.714286
+
+
+#### Age and market values
+![image]](Images/age_values.jpg)
+
+### Linear Regression Model
 As taking the following steps, the R-squared of the model reached to 0.9735.
 
+[**Cleaning**]
 - Filter out retired players
 - Filter out goalkeepers
 - Filter out players who belongs to lower division
 
+The number of rows decreased to 7048. (In the beginning it was 17125)
+
+[**Transformation**]
 - Box-cox transformation to 'value' variable
 
+[**Variables**]
 - set dependent variable as 'ova', 'age' and 'sm'
 - but not necessary to have 'sm' because it doesn't make a big difference.
 
-**Things to consider:**
+![image]](Images/regplot_1.jpg)
+
+| top_league | no trans | box-cox'value' | only active | no gk | 'ova','age' | 'ova','age','sm' | best11 | remove outliers
+| ---        | ---      | ---            |   ---       |  ---  |  ---        | ---              | ---    | --- 
+|  all       |  0.400   |  0.858         |  0.883      |  -    |  -          |  -               |  -     |  -  
+|  top31     |  -       |  -             |  0.899      | 0.911 | 0.965       |  -               |  -     |  -  
+|  top18     |  -       |  -             |  0.906      | 0.930 | **0.972**   |  **0.973**       | 0.975  | 0.972
+|  top8      |  -       |  -             |  0.906      | 0.935 | 0.968       |  -               |  -     |  - 
+|  top5      |  -       |  -             |  0.929      | 0.936 | 0.971       |  -               |  -     |  - 
+
+*Notice*
+
+The best11 has the highest r-squared value, however the coeffecient of best11 was negative, which supposed to be positive. So, I would not take it as the best model.
+
+### Things to consider 
 
 I am little skeptical about my model, because the r-squared is too high...
 
-This model is totally dependent on 'overall rating' which I do not know how this value was created.
-If overall rating was made from abilities as well as market value, this model would not work.
+This model is mostly dependent on 'overall rating' which I do not know how this value was created. If overall rating was made from abilities as well as market value, this model would not work.
 
 
