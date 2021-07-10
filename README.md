@@ -3,8 +3,8 @@
 ## The objective and the motive
 
 Football is one of the largest market in sports.
-In this analysis, I will try to draw the overview of the values of players by sorting countries, leagues, and their age. 
-I will also make the linear regression model to predict the values of players.
+In this analysis, I will try to draw the overview of the market values of players by sorting countries, leagues, and their ages. 
+I will also make the linear regression model to predict the market value of a player.
 
 ### Three Analysis
 
@@ -96,16 +96,23 @@ I followed the following steps to analyze the data and create linear regression 
 
 6. Analysing Linear Regression Models
 
-## Results
-As taking the following steps, the R-squared of the model reached to 0.973
+## Results of linear regression model
+As taking the following steps, the R-squared of the model reached to 0.9735.
+
 - Filter out retired players
 - Filter out goalkeepers
 - Filter out players who belongs to lower division
+
 - Box-cox transformation to 'value' variable
 
 - set dependent variable as 'ova', 'age' and 'sm'
+- but not necessary to have 'sm' because it doesn't make a big difference.
 
-**Things to consider**
-I am little skeptical about my model, because the r-squared value is too high...
-Also, this model is totally depended on 'overall ability' which I do not how this value was 
+**Things to consider:**
+
+I am little skeptical about my model, because the r-squared is too high...
+
+This model is totally dependent on 'overall rating' which I do not know how this value was created.
+If overall rating was made from abilities as well as market value, this model would not work.
+
 
