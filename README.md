@@ -1,6 +1,6 @@
 # Project_FIFA_MoneyBall
 
-![image1]](Images/fifa.jpeg)
+![image1](Images/fifa.jpeg)
 
 ## The objective and the motive
 
@@ -134,7 +134,7 @@ I followed the following steps to analyze the data and create linear regression 
 
 
 #### Age and market values
-![image2]](Images/age_values.jpg)
+![image2](Images/age_values.jpg)
 
 ### Linear Regression Model
 As taking the following steps, the R-squared of the model reached to 0.9735.
@@ -153,7 +153,7 @@ The number of rows decreased to 7048. (In the beginning it was 17125)
 - set dependent variable as 'ova', 'age' and 'sm'
 - but not necessary to have 'sm' because it doesn't make a big difference.
 
-![image3]](Images/regplot_1.jpg)
+![image3](Images/regplot_1.jpg)
 
 | top_league | no trans | box-cox'value' | only active | no gk | 'ova','age' | 'ova','age','sm' | best11 | remove outliers
 | ---        | ---      | ---            |   ---       |  ---  |  ---        | ---              | ---    | --- 
